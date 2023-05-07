@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="edu.application.notepad.ui.controllers.NotePadFindAndReplaceController"
+            prefHeight="250.0" prefWidth="450.0" vgap="10" hgap="10" alignment="TOP_LEFT">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="40"/>
+    </padding>
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="0">Find</Label>
+    <TextField fx:id="textFieldSearch" GridPane.columnIndex="1" GridPane.rowIndex="0"></TextField>
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="2">Replace with</Label>
+    <TextField fx:id="textFieldReplace" GridPane.columnIndex="1" GridPane.rowIndex="2"></TextField>
+
+    <HBox GridPane.columnIndex="1" GridPane.rowIndex="5" spacing="10">
+        <Button fx:id="buttonReplaceAll" onAction="#onButtonReplaceAllClick">Replace All</Button>
+        <Button fx:id="buttonReplace" onAction="#onButtonReplaceClick">Replace</Button>
+        <Button fx:id="buttonFind" onAction="#onButtonFindClick">Find</Button>
+    </HBox>
+
+</GridPane>
